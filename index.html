@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diwali Greetings</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffd700, #c0c0c0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .greeting-card {
+      width: 80%;
+      max-width: 500px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ffd700; /* Gold color */
+      margin-bottom: 10px;
+      animation: sparkle 1s ease infinite alternate;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #c0c0c0; /* Silver color */
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #f1f1f1;
+      margin-bottom: 30px;
+    }
+
+    .sparkles {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .sparkle {
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ffd700 0%, transparent 60%);
+      border-radius: 50%;
+      animation: sparkleMove 1.5s linear infinite;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes sparkle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-10px); opacity: 0.7; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Button styling */
+    .shop-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #000;
+      background: #ffd700;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .shop-button:hover {
+      background: #c0c0c0; /* Silver color */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="greeting-card">
+    <h1>Happy Diwali!</h1>
+    <h2>From Our Gold & Silver Jewelry Shop</h2>
+    <p>May this Diwali bring you prosperity, happiness, and sparkle to your life. Explore our latest collection and shine brighter than ever!</p>
+
+    <!-- Sparkling animations -->
+    <div class="sparkles">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+
+    <!-- Button to visit shop -->
+    <a href= index1.html class="shop-button">Visit Our Shop</a>
+  </div>
+
+</body>
+</html>
